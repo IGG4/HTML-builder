@@ -24,8 +24,8 @@ rl.on('line', (input) => {
     }
 });
 
-process.on('SIGINT', () => {
-    console.log('Goodbye!');
+rl.on('SIGINT', () => {
+    console.log('\nGoodbye!)))');
     rl.close();
     process.exit(0);
 });
