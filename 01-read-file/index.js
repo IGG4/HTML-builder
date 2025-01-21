@@ -13,7 +13,3 @@ readStream.on('data', chunk => {
 readStream.on('error', error => {
     console.error('Error during readinfg file:', error.message);
 });
-
-readStream.on('end', () => {
-    console.log('\n Finish.');
-});
