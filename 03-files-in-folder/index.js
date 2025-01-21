@@ -22,10 +22,6 @@ async function listFolderContents() {
                 const fileSize = (fileStats.size / 1024).toFixed(3);
 
                 console.log(`${fileName} - ${fileExtension} - ${fileSize}kb`);
-            } else if (entry.isDirectory()) {
-                console.log(`${entry.name} - folder`);
-            } else {
-                console.log(`Unknown object: ${entry.name}`);
             }
         }
     } catch (error) {
